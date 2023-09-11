@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+
+body {
+	margin: 0;
+	padding: 0;
+	/* background-color: #f6f7f2; */
+	/* background-color: #f2f3ee; */
+	font-family: "Inter", sans-serif;
+}
+
+.data-table th:last-child .sort-icon {
+	display: none;
+}
+
+@media print {
+	.navigation-bar {
+		display: none;
+	}
+	.sidepanel {
+		display: none !important;
+		left: -24rem;
+	}
+
+	.main-content {
+		margin-left: 0;
+		width: 100%;
+	}
+	.breadcrumbs {
+		display: none;
+	}
+	.search-export-container {
+		display: none;
+	}
+	.sort-icon {
+		display: none;
+	}
+	.column-filter {
+		display: none;
+	}
+	.pagination-container {
+		display: none;
+	}
+	.data-table th:last-child {
+		display: none;
+	}
+	.data-table td:last-child {
+		display: none;
+	}
+}

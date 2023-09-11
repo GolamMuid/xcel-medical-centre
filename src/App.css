@@ -1,0 +1,58 @@
+.my-swiper .swiper-pagination-bullet {
+	background-color: white; /* Change the background color to white */
+	width: 10px; /* Increase the width of the pagination dots */
+	height: 10px; /* Increase the height of the pagination dots */
+	opacity: 0.5; /* (Optional) Reduce the opacity of the pagination dots */
+}
+
+.my-swiper .swiper-pagination-bullet-active {
+	opacity: 1; /* (Optional) Increase the opacity of the active pagination dot */
+}
+
+.logo {
+	animation: logoAnimate 5s linear infinite;
+	transform-origin: center;
+}
+
+@keyframes logoAnimate {
+	20% {
+		transform: rotateY(0deg);
+	}
+	100% {
+		transform: rotateY(360deg);
+	}
+}
+
+.about-us-container {
+	grid-template-columns: 2fr 1fr;
+}
+
+.video-container {
+	grid-template-columns: 2fr 1fr;
+}
+
+.mobile-slide {
+	background-color: transparent; /* Remove the background color */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-container {
+	grid-template-columns: 1fr 2fr;
+}
+
+@media screen and (max-width: 768px) {
+	.about-us-container {
+		grid-template-columns: 1fr;
+	}
+	.footer-container {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.video-container {
+		grid-template-columns: 1fr;
+	}
+}
